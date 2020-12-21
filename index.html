@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<!--PAGE 1 : HOMEPAGE-->
+<section>
+    <header>
+        <div id="header-container">
+            <div id = "titre">
+                <h3>web application developer</h3>
+            </div>
+            <div id= "nav-bar">
+                <nav id="navigation"> <!--Cacher la nav-bar au debut et JS pour griser la page sur laquelle on se trouve-->
+                    <ul>
+                        <li>
+                            <a href = "#">Homepage</a>
+                        </li>
+                        <li>
+                            <a href = "#">About</a>
+                        </li>
+                        <li>
+                            <a href= "#">Skills & Projects</a>
+                        </li>
+                        <li>
+                            <a href = "#">Career</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="portfolio-overlay">
+        <div class ="homepage-img"><!--img avec hoover : apparition du titre en transparence sur l'image-->
+                <div class="logo">
+                    <img src="typo.png" class="carte" id="name">
+                </div>
+                <div class="logo">
+                    <img src="logo.jpg" class="carte" id="logo">
+                    <h4>about</h4>
+                    <a title = "link to About" href = "#"></a>
+                </div>
+                <div class="logo">
+                    <img src="skills_blue.jpg" class="carte" id="skills">
+                    <h4>skills & projects</h4>
+                    <a title = "link to Skills and Projects" href = "#"></a>
+                </div>
+                <div class="logo">
+                    <img src ="career_green.jpg" class="carte" id="career">
+                    <h4>career</h4>
+                    <a title = "link to Career" href = "#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--PAGE 2 : PRESENTATION-->
+<section>
+    <div id="about-bckg-img">
+        <img src="#">
+    </div>
+    <div id = "about-contenu">
+        <div class="titre">
+            <h2>About</h2>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptas fugit eaque, aut iusto ipsum itaque voluptatibus incidunt veritatis eligendi ullam magni explicabo sit quae deserunt reprehenderit ducimus culpa quidem.</p>    
+            <p><a title="Contactez-moi" id="email">exemple@email.com</a></p>
+        </div>
+        <div id = "button">
+            <ul>
+                <li><button id ="cv">CV</button></li>
+                <li><button id ="github">GitHub</button></li>
+                <li><button id ="linkedIn">LinkedIn</button></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--PAGE 3 : COMPETENCES ET PROJETS-->
+<section>
+    <div id="skills-bckg-img">
+        <img src="#">
+    </div>
+    <div id="skills-contenu">
+        <div class="titre">
+            <h2>Skills & Projects</h2>
+        </div>
+            <table id="cards"> <!--Table : au click on deploie la cellule + decriptions/langages et ajouter lien github-->
+                <tr>
+                    <td>projet1</td>
+                    <td>projet2</td>
+                    <td>projet3</td>
+                    <td>projet4</td>
+                </tr>
+                <tr>
+                    <td>projet5</td>
+                    <td>projet6</td>
+                    <td>projet7</td>
+                    <td>projet8</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!--PAGE 4 : PARCOURS-->
+<section>
+    <div class="titre">
+        <h2>Career</h2>
+    </div>
+    <div id="career-contenu">
+        <div class = "cell">
+            <img src ="#">
+            <p></p>
+        </div>
+        <div class = "cell">
+            <img src ="#">
+            <p></p>
+        </div>
+        <div class = "cell">
+            <img src ="#">
+            <p></p>
+        </div>
+        <div class = "cell">
+            <img src ="#">
+            <p></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,23 @@
+div {
+  border-width: 1px;
+  border: solid 1px black;
+}
+
+.homepage-img {
+  display: flex;
+}
+
+.logo {
+  contain: content;
+  text-align: center;
+  width: 20%;
+  height: 30%;
+  margin: 2%;
+  border: solid 1px black;
+}
+.carte {
+  height: 100%;
+  width: 100%;
+}
+
+#logo
