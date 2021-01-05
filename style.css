@@ -1,23 +1,62 @@
-div {
-  border-width: 1px;
-  border: solid 1px black;
+section {
+  position: relative;
 }
 
-.homepage-img {
-  display: flex;
+#camille {
+  width: 10%;
+}
+
+#logos {
+  text-align: center;
 }
 
 .logo {
-  contain: content;
-  text-align: center;
-  width: 20%;
-  height: 30%;
-  margin: 2%;
-  border: solid 1px black;
+  display: inline-block;
+  /* contain: content;*/
+  max-width: 30%;
+  padding-left: 1%;
+  padding-right: 1%;
+  position: relative;
 }
-.carte {
-  height: 100%;
-  width: 100%;
+.logo:hover {
+  background-color: white;
+  opacity: 0.2;
 }
 
-#logo
+.logo-overlay {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+/* .logo-hover {
+  background-color: white;
+  opacity: 0.2;
+  width: 100%;
+} */
+
+/* 
+.texte {
+  z-index: 2;
+  position: absolute;
+} */
+
+img.carte {
+  width: 100%;
+  border: solid 1px gray;
+}
+
+#nav-bar {
+  display: flex;
+}
+
+#titre {
+  text-align: center;
+}
+
+#wad {
+  padding-top: 0px;
+  margin-top: 0px;
+}

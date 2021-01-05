@@ -4,64 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type='text/javascript' src='script.js'></script>
     <title>Document</title>
 </head>
 
 <body>
 <!--PAGE 1 : HOMEPAGE-->
-<section>
+<section id ="homepage">
     <header>
         <div id="header-container">
             <div id = "titre">
-                <h3>web application developer</h3>
+                <img src="typo.png" id="camille">
+                <h3 id="wad">web application developer</h3>              
             </div>
-            <div id= "nav-bar">
-                <nav id="navigation"> <!--Cacher la nav-bar au debut et JS pour griser la page sur laquelle on se trouve-->
-                    <ul>
-                        <li>
-                            <a href = "#">Homepage</a>
-                        </li>
-                        <li>
-                            <a href = "#">About</a>
-                        </li>
-                        <li>
-                            <a href= "#">Skills & Projects</a>
-                        </li>
-                        <li>
-                            <a href = "#">Career</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div id= "menu">
+                <!--Cacher la nav-bar au debut et JS pour griser la page sur laquelle on se trouve-->
+                <ul id= "nav-bar">
+                    <li>
+                        <a href = "#homepage">Homepage</a>
+                    </li>
+                    <li>
+                        <a href = "#about">About</a>
+                    </li>
+                    <li>
+                        <a href= "#skills">Skills & Projects</a>
+                    </li>
+                    <li>
+                        <a href = "#career">Career</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
-    <div id="portfolio-overlay">
-        <div class ="homepage-img"><!--img avec hoover : apparition du titre en transparence sur l'image-->
-                <div class="logo">
-                    <img src="typo.png" class="carte" id="name">
+        <div id ="logos"><!--img avec hoover : apparition du titre en transparence sur l'image-->
+                <div class="logo" id="logo-about">
+                    <a title = "link to About" href = "#about"><img src="skillsNB.jpg" class="carte" id="about"></a>
+                    <div class="logo-hover" id="about-hover">about</div>
                 </div>
-                <div class="logo">
-                    <img src="logo.jpg" class="carte" id="logo">
-                    <h4>about</h4>
-                    <a title = "link to About" href = "#"></a>
+                <div class="logo" id="logo-skills">
+                    <a title="link to Skills and Projects" href = "#skills">
+                    <img src="skills_blue.jpg" class="carte" id="skills"></a>
+                    <div class="logo-hover" id="skills-hover">skills & projects</div>
                 </div>
-                <div class="logo">
-                    <img src="skills_blue.jpg" class="carte" id="skills">
-                    <h4>skills & projects</h4>
-                    <a title = "link to Skills and Projects" href = "#"></a>
-                </div>
-                <div class="logo">
+                <article class="logo">
+                    <div class="logo-overlay" id="logo-career">
+                        <h4>career</h4>
+                    </div>
+                    <a title = "link to Career" href = "#career">
                     <img src ="career_green.jpg" class="carte" id="career">
-                    <h4>career</h4>
-                    <a title = "link to Career" href = "#"></a>
-                </div>
+                    </a>
+                </article>
             </div>
         </div>
-    </div>
 </section>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <!--PAGE 2 : PRESENTATION-->
-<section>
+<section id ="about">
     <div id="about-bckg-img">
         <img src="#">
     </div>
@@ -84,7 +84,7 @@
 </section>
 
 <!--PAGE 3 : COMPETENCES ET PROJETS-->
-<section>
+<section id="skills">
     <div id="skills-bckg-img">
         <img src="#">
     </div>
@@ -111,7 +111,7 @@
 </section>
 
 <!--PAGE 4 : PARCOURS-->
-<section>
+<section id="career">
     <div class="titre">
         <h2>Career</h2>
     </div>
@@ -134,5 +134,7 @@
         </div>
     </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type='text/javascript' src='jquery.js'></script>
 </body>
 </html>
