@@ -14,3 +14,12 @@
     // $('.p1').mouseleave(function(){
     //     $('.p2').hide();
     // });
+
+    // $(document).ready(function(){
+
+//     $('#career').hover(
+//         function(){$('.logo-overlay').show();},
+//         function(){$('.logo-overlay').hide();
+//     });
+
+// });

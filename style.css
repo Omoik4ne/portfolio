@@ -1,5 +1,15 @@
 section {
   position: relative;
+  width: 100%;
+  height: 900px;
+  margin: 0%;
+  padding: 0%;
+}
+
+#titre {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 #camille {
@@ -13,64 +23,42 @@ section {
 .logo {
   display: inline-block;
   /* contain: content;*/
-  max-width: 30%;
-  padding-left: 1%;
-  padding-right: 1%;
+  max-width: 32%;
+  padding-left: 2%;
+  padding-right: 2%;
   position: relative;
 }
-/* .logo:hover {
-  background-color: white;
-  opacity: 0.2;
-}
 
-.logo-overlay {
-  position: absolute;
-  width: 95%;
-  height: 100%;
-  text-align: center;
-  z-index: 2;
-} */
 .img-container {
   width: 500px;
   height: 400px;
   position: relative;
 }
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  .white-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: white;
-    color: black;
-    line-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
-  .white-overlay:hover {
-    opacity: 0.8;
-  }
 
-/* .logo-hover {
-  background-color: white;
-  opacity: 0.2;
+img {
   width: 100%;
-} */
-
-/* 
-.texte {
-  z-index: 2;
+  height: 100%;
+}
+.white-overlay {
   position: absolute;
-} */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: white;
+  color: black;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+.white-overlay:hover {
+  opacity: 0.8;
+}
 
 img.carte {
   width: 100%;
@@ -81,11 +69,38 @@ img.carte {
   display: flex;
 }
 
-#titre {
-  text-align: center;
-}
-
 #wad {
   padding-top: 0px;
   margin-top: 0px;
+}
+
+#about-contenu {
+  background: url(white-stain2.jpg) fixed no-repeat right;
+}
+
+#portrait {
+  z-index: 2;
+  opacity: 0.2;
+  position: absolute;
+  width: 35%;
+}
+
+h2 {
+  padding: 5%;
+  text-align: right;
+}
+
+#skills-contenu {
+  background: url(black-road3.jpg) fixed no-repeat right;
+}
+
+#skills-title {
+  color: white;
+}
+
+.cards {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px black;
 }
