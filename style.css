@@ -75,23 +75,48 @@ img.carte {
 }
 
 #about-contenu {
-  background: url(white-stain2.jpg) fixed no-repeat right;
+  padding-top: 10%;
+  background-image: url(white-stone4.jpg);
+  background-size: cover;
+  position: relative;
 }
 
 #portrait {
-  z-index: 2;
-  opacity: 0.2;
   position: absolute;
-  width: 35%;
+  width: 30%;
+  opacity: 0.5;
+}
+
+#about-text {
+  text-align: center;
+  float: right;
+  width: 100%;
 }
 
 h2 {
-  padding: 5%;
-  text-align: right;
+  font-size: 100px;
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
+
+#description {
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+#email {
+  margin: 50px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #skills-contenu {
-  background: url(black-road3.jpg) fixed no-repeat right;
+  background: url(black-sky.jpg) fixed no-repeat right;
 }
 
 #skills-title {
@@ -99,8 +124,12 @@ h2 {
 }
 
 .cards {
-  width: 65%;
   display: flex;
+  width: 65%;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.cards div {
   border: solid 1px black;
 }

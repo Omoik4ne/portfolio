@@ -1,3 +1,2 @@
 $('#menu').hide();
-$('.logo-overlay').hide();
-
+//$('.logo-overlay').hide();
