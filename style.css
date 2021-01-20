@@ -1,5 +1,5 @@
 section {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 900px;
   margin: 0%;
@@ -91,12 +91,14 @@ img.carte {
   font-size: 100px;
   margin-bottom: 10%;
   margin-top: 0%;
+  color: whitesmoke;
 }
 
 #about-text {
   text-align: center;
   float: right;
   width: 100%;
+  color: whitesmoke;
 }
 
 #description {
@@ -131,13 +133,16 @@ ul {
   color: gray;
   width: 35%;
   display: block;
+  float: right;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  float: right;
+  float: left;
   width: 60%;
+  height: 100%;
+  contain: content;
 }
 
 .card {
@@ -158,6 +163,21 @@ ul {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
 }
+/* Property Cards Hover States */
+
+.card:hover .container {
+  height: 0em;
+  padding: 0px 1em;
+}
+.card:hover .img-card {
+  height: 18em;
+}
+
+.card:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
 #career-contenu {
   margin-top: 10%;
   padding-top: 10%;
