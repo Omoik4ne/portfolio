@@ -1,7 +1,7 @@
 section {
   /* position: relative; */
   width: 100%;
-  height: 900px;
+  height: 1080px;
   margin: 0%;
   padding: 0%;
 }
@@ -56,6 +56,7 @@ img {
   font-size: 45px;
   text-transform: uppercase;
 }
+
 .white-overlay:hover {
   opacity: 0.8;
 }
@@ -75,7 +76,7 @@ img.carte {
 }
 
 #about-contenu {
-  padding-top: 10%;
+  padding-top: 5%;
   background-image: url(blue-wall.jpg);
   background-size: cover;
   position: relative;
@@ -106,6 +107,7 @@ img.carte {
   text-align: left;
   padding-left: 33%;
   padding-right: 33%;
+  font-size: 20px;
 }
 
 #email {
@@ -113,8 +115,7 @@ img.carte {
 }
 
 #list {
-  float: right;
-  padding: 10%;
+  float: left;
 }
 
 ul {
@@ -127,27 +128,32 @@ ul {
   background-size: cover;
   position: relative;
   background-color: black;
+  margin-bottom: 0%;
 }
 
 #skills-title {
   color: gray;
-  width: 35%;
+  width: 25%;
   display: block;
-  float: right;
+  float: left;
+  text-align: center;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  float: left;
-  width: 60%;
+  float: right;
+  width: 75%;
   height: 100%;
   contain: content;
+  position: relative;
 }
 
 .card {
+  position: absolute;
   background-color: black;
   color: whitesmoke;
+  display: flex;
 }
 
 .img-card {
@@ -157,13 +163,8 @@ ul {
 
 .container {
   padding: 2px 16px;
-  height: 55%;
+  height: 30%;
 }
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
-}
-/* Property Cards Hover States */
 
 .card:hover .container {
   height: 0em;
@@ -179,9 +180,7 @@ ul {
 }
 
 #career-contenu {
-  margin-top: 10%;
-  padding-top: 10%;
-  background-image: url(black-stone.jpg);
+  background-image: url(black-road2.jpg);
   background-size: cover;
   position: relative;
   background-color: black;
