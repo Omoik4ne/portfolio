@@ -13,7 +13,7 @@ section {
 .fit {
   max-width: 99%;
   max-height: 99%;
-  border: solid 1px gray;
+  border: solid 1.5px gray;
 }
 
 #titre {
@@ -27,7 +27,8 @@ section {
 }
 
 #logos {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
 }
 
 .logo {
@@ -130,14 +131,6 @@ span {
   float: right;
 }
 
-#list {
-  float: left;
-}
-
-ul {
-  list-style-type: none;
-}
-
 #skills-contenu {
   margin-top: 10%;
   background-image: url(white-stain2.jpg);
@@ -147,29 +140,36 @@ ul {
   margin-bottom: 0%;
 }
 
+#skills-menu {
+  width: 20%;
+}
+
 #skills-title {
   color: gray;
-  width: 25%;
   display: block;
-  float: left;
   text-align: center;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  float: right;
-  width: 75%;
-  height: 100%;
-  contain: content;
-  position: relative;
+ul {
+  list-style-type: none;
 }
 
-.card {
-  position: absolute;
+.cards {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  float: right;
+  /* position: relative; */
+  display: grid;
+  width: 75%;
+  /* height: 100%; */
+  /* contain: content; */
+  /* display: flex; */
+  float: right;
+  justify-content: space-around;
+}
+
+/* .card {
   background-color: black;
   color: whitesmoke;
-  display: flex;
 }
 
 .img-card {
@@ -193,7 +193,7 @@ ul {
 .card:hover {
   background-color: white;
   cursor: pointer;
-}
+} */
 
 #career-contenu {
   background-image: url(black-road2.jpg);
