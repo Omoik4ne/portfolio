@@ -6,6 +6,12 @@ section {
   padding: 0%;
 }
 
+.fit {
+  max-width: 99%;
+  max-height: 99%;
+  border: solid 1px gray;
+}
+
 #titre {
   text-align: center;
   padding-top: 30px;
@@ -39,6 +45,7 @@ img {
   width: 100%;
   height: 100%;
 }
+
 .white-overlay {
   position: absolute;
   top: 0;
@@ -90,7 +97,7 @@ img.carte {
 
 #about-title {
   font-size: 100px;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   margin-top: 0%;
   color: whitesmoke;
 }
@@ -108,10 +115,15 @@ img.carte {
   padding-left: 33%;
   padding-right: 33%;
   font-size: 20px;
+  line-height: 1.3em;
 }
 
 #email {
-  margin: 10%;
+  padding-left: 10%;
+}
+
+span {
+  float: right;
 }
 
 #list {
