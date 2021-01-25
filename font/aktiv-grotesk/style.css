@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Aktiv Grotesk';
+    src: local('Aktiv Grotesk Light'), local('Aktiv-Grotesk-Light'),
+        url('AktivGroteskCorp-Light.woff2') format('woff2'),
+        url('AktivGroteskCorp-Light.woff') format('woff'),
+        url('AktivGroteskCorp-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

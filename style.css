@@ -1,16 +1,54 @@
+body {
+  font-family: "Aktiv Grotesk", "Arial";
+  margin: 0;
+  padding: 0;
+}
+
+/* ~~~~~~~~~HEADER~~~~~~~~~ */
+
+#camille {
+  width: 12%;
+}
+
+#wad {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 150%;
+  color: #282828;
+  letter-spacing: 15px;
+  /*   color: grey; */
+}
+
+/* ~~~~~~~~~GÉNÉRAL~~~~~~~~~ */
+
 section {
-  /* position: relative; */
-  /* width: 100%;
-  height: 1080px; */
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   top: 0;
   left: 0;
-  margin: 0%;
-  padding: 0%;
+}
+
+h3 {
+  /*   font-weight: 100; */
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+  text-align: center;
+  font-size: 4em;
+  font-variant: small-caps;
+}
+
+/* ~~~~~~~~~MENU~~~~~~~~~ */
+
+#about-title {
+  margin-bottom: 5%;
+  color: whitesmoke;
+  letter-spacing: 15px;
 }
 
 .fit {
+  /* À vérifier */
   max-width: 99%;
   max-height: 99%;
   border: solid 1.5px gray;
@@ -19,36 +57,21 @@ section {
 #titre {
   text-align: center;
   padding-top: 2%;
-  padding-bottom: 7%;
-}
-
-#camille {
-  width: 12%;
+  padding-bottom: 5%;
 }
 
 #logos {
-  /* text-align: center; */
   display: flex;
+  justify-content: center;
 }
 
 .logo {
+  position: relative;
   display: inline-block;
-  /* contain: content;*/
-  max-width: 30%;
-  padding-left: 1%;
-  padding-right: 1%;
-  position: relative;
-}
-
-.img-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-img {
-  width: 100%;
-  height: 100%;
+  /* contain: content; */
+  width: 30%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
 }
 
 .white-overlay {
@@ -62,10 +85,10 @@ img {
   color: black;
   line-height: 100%;
   display: flex;
-  flex-direction: column;
+  /*   flex-direction: column; */
   align-items: center;
   justify-content: center;
-  font-size: 45px;
+  font-size: 200%;
   text-transform: uppercase;
 }
 
@@ -73,54 +96,24 @@ img {
   opacity: 0.8;
 }
 
-img.carte {
-  width: 100%;
-  border: solid 1px gray;
-}
-
-#nav-bar {
-  display: flex;
-}
-
-#wad {
-  padding-top: 0px;
-  margin-top: 0px;
-}
+/* ~~~~~~~~~ABOUT~~~~~~~~~ */
 
 #about-contenu {
-  padding-top: 5%;
   background-image: url(blue-wall.jpg);
   background-size: cover;
-  position: relative;
-}
-
-#portrait {
-  position: absolute;
-  width: 30%;
-  opacity: 0.5;
-}
-
-#about-title {
-  font-size: 100px;
-  margin-bottom: 8%;
-  margin-top: 0%;
-  color: whitesmoke;
+  /* position: absolute; */
+  margin-bottom: 10%;
 }
 
 #about-text {
   text-align: center;
-  float: right;
-  width: 100%;
   color: whitesmoke;
-}
-
-#description {
   float: left;
   text-align: left;
-  padding-left: 33%;
-  padding-right: 33%;
-  font-size: 20px;
+  padding-left: 40%;
+  padding-right: 15%;
   line-height: 1.3em;
+  font-size: 130%;
 }
 
 #email {
@@ -131,77 +124,152 @@ span {
   float: right;
 }
 
+/* ~~~~~~~~~SKILLS~~~~~~~~~ */
+
 #skills-contenu {
-  margin-top: 10%;
-  background-image: url(white-stain2.jpg);
-  background-size: cover;
+  background-image: url(white-stain.jpg);
+  background-repeat: repeat-y;
   position: relative;
-  background-color: black;
-  margin-bottom: 0%;
+  /* background-color: black; */
+  margin-bottom: 10%;
+  display: flex;
+  background-size: cover;
 }
 
 #skills-menu {
-  width: 20%;
+  width: 30%;
 }
 
 #skills-title {
   color: gray;
-  display: block;
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .cards {
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  float: right;
-  /* position: relative; */
+  padding: 2%;
+  /* background-color: black; */
+  width: 70%;
   display: grid;
-  width: 75%;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  /* position: relative; */
   /* height: 100%; */
-  /* contain: content; */
+  /*   contain: content; */
   /* display: flex; */
-  float: right;
-  justify-content: space-around;
+  /*   float: right; */
+  /* justify-content: space-around; */
 }
 
-/* .card {
-  background-color: black;
+.card {
   color: whitesmoke;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 2%;
+  text-transform: uppercase;
+  position: relative;
 }
 
 .img-card {
   width: 100%;
-  height: 45%;
+  height: 100%;
+  border: solid 2px black;
 }
 
-.container {
-  padding: 2px 16px;
-  height: 30%;
-}
-
-.card:hover .container {
-  height: 0em;
-  padding: 0px 1em;
-}
-.card:hover .img-card {
-  height: 18em;
-}
-
-.card:hover {
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
   background-color: white;
+  color: black;
+  border: solid 1px black;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.card-overlay:hover {
+  opacity: 0.7;
+}
+
+h4 {
+  /*   font-weight: 100; */
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  font-variant: small-caps;
+}
+
+/* ~~~~~~~~~BOUTONS~~~~~~~~~ */
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+button {
+  padding: 15px 100px;
+  margin: 10px 4px;
+  width: 10%;
   cursor: pointer;
-} */
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+/* ~~~~~~~~~CAREER~~~~~~~~~ */
 
 #career-contenu {
-  background-image: url(black-road2.jpg);
+  background-image: url(black-road.jpg);
   background-size: cover;
   position: relative;
-  background-color: black;
+  /* background-color: black; */
 }
 
 #career-title {
-  color: white;
+  color: whitesmoke;
 }
+
+.cell {
+  display: flex;
+  padding: 2em;
+  width: 60%;
+  margin: auto;
+}
+.cell-txt {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 40%;
+  padding-bottom: 40%;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 130%;
+}
+
+/* .dot {
+  height: 20%;
+} */
+
+/* 
+#logos {
+  display: flex;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+ */

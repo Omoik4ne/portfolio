@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href = "font/aktiv-grotesk/style.css" rel = "stylesheet" type = "text/css" />
     <title>Document</title>
-</head>
-
-<body>
+    </head>
+    <body>
 <!--PAGE 1 : HOMEPAGE-->
-<section id ="homepage">
-    <header>
-        <div id="header-container">
-            <div id = "titre">
-                <img src="typo.png" id="camille">
-                <h3 id="wad">web application developer</h3>
-            </div>
-            <div id= "menu">
-                <!--Cacher la nav-bar au debut et JS pour griser la page sur laquelle on se trouve-->
+        <section id ="homepage">
+            <header>
+                <div id="header-container">
+                    <div id = "titre">
+                        <img src="typo.png" id="camille">
+                        <h3 id="wad">web application developer</h3>
+                    </div>
+            <!-- <div id= "menu">
                 <ul id= "nav-bar">
                     <li>
                         <a href = "#homepage">Homepage</a>
@@ -28,18 +27,20 @@
                     <li>
                         <a href= "#skills-contenu">Skills & Projects</a>
                     </li>
-                    <li>
                         <a href = "#career-contenu">Career</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </header>
+            </div> -->
+            <!-- <div>
+                <img src="icon.png" class="icon">
+            </div> -->
+                </div>
+            </header>
         <div id ="logos"><!--img avec hoover : apparition du titre en transparence sur l'image-->
             <div class="logo" id="logo-about">
                 <div class="img-container">
                     <a title = "link to About" href = "#about-contenu">
-                    <img src="career_green.jpg" class="fit" id="about">
+                    <img src="about.jpg" class="fit" id="about">
                     <div class="white-overlay">about</div>
                     </a>
                 </div>
@@ -55,227 +56,266 @@
             <div class="logo">
                 <div class="img-container">
                     <a title = "link to About" href = "#career-contenu">
-                    <img src="career_green.jpg" class="fit" id="career">
+                    <img src="career.jpg" class="fit" id="career">
                     <div class="white-overlay">career</div>
                     </a>
                 </div>
             </div>
         </div>
-</section>
+        </section>
 
 <!--PAGE 2 : PRESENTATION-->
 
-    <section id="about-contenu">
-        <img src="femme.jpg" id="portrait">
+        <section id="about-contenu">
         <div id="about-text">
-            <h2 id="about-title">About</h2>
-            <div id="description">
+            <h3 id="about-title">about</h3>
                 <p >Hello, my name is Camille. I'm a future junior web developer.
-                    <br>After having brought my energy and creativity to the domain of entertainment I would like to devote them to another field.
-                    <br>I discovered the world of code by being interested in the world of new technologies, the possibilities they offer but also the questions they raise. I went through a phase of self-training online - which never ended by the way - then I wanted to undertake a more in-depth and serious training.
+                    <br>After having brought my energy and creativity to the domain of entertainment, I would like to devote them to another field.
+                    <br>I discovered the world of code by being interested in the domain of new technologies: the possibilities they offer but also the questions they raise. I went through a phase of self-training online - which never ended by the way - and then I wanted to undertake a more in-depth and serious education.
                     <br>It's difficult for me, coming from the entertainment business, to imagine anything other than working in a team where it's essential to combine efforts in order to successfully complete a project. This is also why I wanted to learn from trainers and why I am looking for an internship.
                     <br>I like structure and order and I get along pretty well with the logic of object-oriented languages. If you want to know more about me, you will find my complete profile on the following pages.
-                    <br>Feel free to contact me on my email address:<br><br>
+                    <br>Please don't hesitate to contact me at:<br><br>
                     <a title="Contactez-moi" id="email">de.sancy.camille@gmaill.com</a><br><br>
-                    <span>Enjoy reading.</span>
+                    <span>All comments are welcome.</span>
                 </p>
-            </div>
         </div>
         </section>
 
 <!--PAGE 3 : COMPETENCES ET PROJETS-->
 
-<section id="skills-contenu">
+        <section id="skills-contenu">
     <div id="skills-menu">
-        <h2 id="skills-title">Skills & Projects</h2>
+        <h3 id="skills-title">skills & projects</h3>
         <div id="list">
             <ul>
-                <li><button id ="cv">CV</button></li>
-                <li><button id ="github">GitHub</button></li>
-                <li><button id ="linkedIn">LinkedIn</button></li>
+                <li><a target = "_blank" title = "link to CV" href = "CV.pdf"><button id ="cv" >CV</button></a></li>
+                <li><a title = "link to GitHub" href = "https://github.com/Omoik4ne"><button id ="github">GitHub</button></a></li>
+                <li><a title = "link to LinkedIn" href = "https://www.linkedin.com/in/camille-de-sancy-0637b2204/"><button id ="linkedIn">LinkedIn</button></a></li>
             </ul>
         </div>
     </div>
     <div class="cards"> <!--Table : au click on deploie la cellule + decriptions/langages et ajouter lien github-->
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Welcome to the Museum</b></h4>
-                      <p>HTML,CSS</p>
-                      <p>My First to practice.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>A Detective Story</b></h4>
-                      <p>HTML, CSS</p>
-                      <p>My second exercice : A kind of gamebook.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                        <h4><b>VeggieFight</b></h4>
-                        <p>Python</p>
-                        <p>A very small app simulating a game : a fight between vegetables.</p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                        <h4><b>Calculator</b></h4>
-                        <p>Python</p>
-                        <p>A small Calculator</p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Pick a Color</b></h4>
-                      <p>JavaScript, HTML, CSS</p>
-                      <p>A little CodeCademy exercice.</p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Bouncing Ball</b></h4>
-                      <p>JavaScript, HTML, CSS</p>
-                      <p>A little CodeCademy exercice</p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Fortune Teller</b></h4>
-                      <p>JavaScript, HTML, CSS</p>
-                      <p>A little Codecademy exercice</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Button Game</b></h4>
-                      <p>JavaScript, HTML, CSS</p>
-                      <p>A little Codecademy exercice</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                        <h4><b>Robot Game</b></h4>
-                        <p>JavaScript, HTML, CSS</p>
-                        <p>A little CodeCademy exercice</p>
-                    </div>
-                </div>  
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Piano Player</b></h4>
-                      <p>JavaScript, HTML, CSS</p>
-                      <p>A little Codecademy exercice</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                        <h4><b>RPG</b></h4>
-                        <p>JavaScript, HTML, CSS</p>
-                        <p>A little Udemy exercice</p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>R2D2</b></h4>
-                      <p>OpenScad</p>
-                      <p>An exercice to learn how to use OpenScad</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Equation</b></h4>
-                      <p>C#</p>
-                      <p>Resolving a second degree equation.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Celsius & Farenheit</b></h4>
-                      <p>C#</p>
-                      <p>An exercice to Convert Celsius to Farenheit and the other way around.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Aquarium</b></h4>
-                      <p>C#</p>
-                      <p>One of my fist app to learn how to organize Classes and Inheritance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Mastermind</b></h4>
-                      <p>C#</p>
-                      <p>A little game I tried to create in order to practice.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>Hackaton</b></h4>
-                      <p>HTML, CSS, JavaScript, C# on Unity</p>
-                      <p>One of the biggest Project. We were five to participate, using Unity and lots of Javascript.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="careerNB.jpg" alt="projet" class="img-card">
-                    <div class="container">
-                      <h4><b>CrowFunding</b></h4>
-                      <p>C#, ASP.NET, SQL</ASP></p>
-                      <p>We learn how to create and relate a DB to an App. Using MVC methode.</p>
-                    </div>
-                </div>
+            <div class="card">
+            <img src="museum.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+                <h4><b>Welcome to the Museum</b></h4>
+                <p>HTML,CSS</p>
+                <p>My First learner's exercice.</p>
+                <a title = "link to git" href = "https://github.com/Omoik4ne/detective.git">Git >></a>
             </div>
         </div>
-</section>
+        <div class="card">
+            <img src="film.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>A Detective Story</b></h4>
+            <p>HTML, CSS</p>
+            <p>My second exercice : A kind of gamebook.</p>
+            <a title = "link to git" href = "https://github.com/Omoik4ne/musee.git">Git >></a>
+        </div>
+        </div>
+        <div class="card">
+            <img src="vegetable.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>VeggieFight</b></h4>
+            <p>Python</p>
+            <p>A very small app simulating a game : a fight between vegetables.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="calculator.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Calculator</b></h4>
+            <p>Python</p>
+            <p>A small calculator</p>
+        </div>
+        </div> 
+        <div class="card">
+            <img src="color.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Pick a Color</b></h4>
+            <p>JavaScript, HTML, CSS</p>
+            <p>A little CodeCademy exercice.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="ball.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Bouncing Ball</b></h4>
+            <p>JavaScript, HTML, CSS</p>
+            <p>A little CodeCademy exercice</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="fortune.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Fortune Teller</b></h4>
+            <p>JavaScript, HTML, CSS</p>
+            <p>A little Codecademy exercice</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="button.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Button Game</b></h4>
+            <p>JavaScript, HTML, CSS</p>
+            <p>A little Codecademy exercice</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="robot.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Robot Game</b></h4>
+            <p>JavaScript, HTML, CSS</p>
+            <p>A little CodeCademy exercice</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="piano.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Piano Player</b></h4>
+            <p>JavaScript, HTML, CSS</p>
+            <p>A little Codecademy exercice</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="rpg.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>RPG</b></h4>
+            <p>JavaScript, HTML, CSS</p>
+            <p>A little Udemy exercice</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="R2D2.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>R2D2</b></h4>
+            <p>OpenScad</p>
+            <p>An exercice to learn how to use OpenScad</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="equation.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Equation</b></h4>
+            <p>C#</p>
+            <p>Resolving a second degree equation.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="celsius.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Celsius & Farenheit</b></h4>
+            <p>C#</p>
+            <p>An exercice to convert Celsius to Farenheit and the other way around.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="aquarium.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Aquarium</b></h4>
+            <p>C#</p>
+            <p>One of my fist app to learn how to organize classes and inheritances</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="masterming.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Mastermind</b></h4>
+            <p>C#</p>
+            <p>A little game I tried to create in order to practice.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="ada.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Where is Linus ?</b></h4>
+            <p>HTML, CSS, JavaScript, C# on Unity</p>
+            <p>Hackathon. One of the biggest projects. Five of us were parcipating, using Unity and lots of Javascript.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="crowdfunding.jpg" alt="projet" class="img-card">
+            <div class="card-overlay">
+            <h4><b>Crowdfunding</b></h4>
+            <p>C#, ASP.NET, SQL</ASP></p>
+            <p>An exercice to create and relate a DB to an App, using MVC.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="ada.jpg" alt="projet" class="img-card">
+        <div class="card-overlay">
+        <h4><b>Where is Linus ?</b></h4>
+        <p>HTML, CSS, JavaScript, C# on Unity</p>
+        <p>Hackathon. One of the biggest projects. Five of us were parcipating, using Unity and lots of Javascript.</p>
+    </div>
+    </div>
+    <div class="card">
+        <img src="crowdfunding.jpg" alt="projet" class="img-card">
+        <div class="card-overlay">
+        <h4><b>Crowdfunding</b></h4>
+        <p>C#, ASP.NET, SQL</ASP></p>
+        <p>An exercice to create and relate a DB to an App, using MVC.</p>
+    </div>
+</div>
+    </div>
+        </section>
 
 <!--PAGE 4 : PARCOURS-->
 
-<section id="career-contenu">
-            <h2 id="career-title">Career</h2>
+        <section id="career-contenu">
+            <h3 id="career-title">career</h3>
         <div class = "cell">
-            <img src ="femme.jpg">
-            <p>Professional training of Web developer full-stack</p>
+            <div class="cell-img">
+            <img src ="if3.jpg">
+            </div>
+            <div class="cell-txt">
+            <p>Full-stack Web developer professional training.</p>
+            <!-- <img src="dotted2.jpg" class="dot"> -->
+        </div>
         </div>
         <div class = "cell">
-            <img src ="femme.jpg">
+            <div class="cell-txt">
             <p>IT support and maintenance internship at DeepIT.</p>
+            </div>
+            <div class="cell-img">
+            <img src ="deepit.jpg">
+            </div>
         </div>
         <div class = "cell">
-            <img src ="femme.jpg">
+            <div class="cell-img">
+            <img src ="mission_locale.jpg">
+            </div>
+            <div class="cell-txt">
             <p>Tuition in Web development at the local mission of Scharbeek.</p>
+            </div>
         </div>
         <div class = "cell">
-            <img src ="femme.jpg">
+            <div class="cell-txt">
             <p>Codecademy and SoloLearn online training on different languages such as HTML, CSS, Javascript or PHP.</p>
+            </div>
+            <div class="cell-img">
+            <img src ="online.jpg">
+            </div>
         </div>
         <div class = "cell">
-            <img src ="femme.jpg">
-            <p>Schooling and Work as a Stage Manager and Costume Technician.</p>
+            <div class="cell-img">
+            <img src ="costume.jpg">
+            </div>
+            <div class="cell-txt">
+            <p>Schooling and Work as a stage manager and costume technician.</p>
+            </div>
         </div>
         <div class = "cell">
-            <img src ="femme.jpg">
-            <p>Bachelor's Degree in Literature, Specialization in English Literature and Audio-Visual.</p>
+            <div class="cell-txt">
+            <p>Bachelor's Degree in Literature, specialization in English literature and audiovisual studies.</p>
+            </div>
+            <div class="cell-img">
+            <img src ="biblio.jpg">
+            </div>
         </div>
-</section>
+    </section>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type='text/javascript' src='jquery.js'></script>
-</body>
+    </body>
 </html>
