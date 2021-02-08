@@ -23,7 +23,8 @@ body {
 
 section {
   position: relative;
-  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
   top: 0;
   left: 0;
@@ -88,7 +89,7 @@ h3 {
   /*   flex-direction: column; */
   align-items: center;
   justify-content: center;
-  font-size: 200%;
+  font-size: 300%;
   text-transform: uppercase;
 }
 
@@ -114,6 +115,7 @@ h3 {
   padding-right: 15%;
   line-height: 1.3em;
   font-size: 130%;
+  contain: content;
 }
 
 #email {
@@ -127,7 +129,7 @@ span {
 /* ~~~~~~~~~SKILLS~~~~~~~~~ */
 
 #skills-contenu {
-  background-image: url(white-stain.jpg);
+  background-image: url(white_stain.jpg);
   background-repeat: repeat-y;
   position: relative;
   /* background-color: black; */
@@ -236,6 +238,8 @@ button:hover {
 #career-title {
   color: whitesmoke;
 }
+
+/* rendre les cellules responsives */
 
 .cell {
   display: flex;
